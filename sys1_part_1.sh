@@ -1,9 +1,13 @@
 #!/bin/bash
 
 function dimension() {
-    nom_fichier=$1;
-    petite_dimension= identify $nom_fichier
-    echo $petite_dimension
+    if [ $# -ge 1 ]; then
+        nom_fichier=$1;
+        petite_dimension= identify $nom_fichier;
+        return $petite_dimension;
+    else
+        echo "erreur";
+    fi
 }
 
-dimension imagesUR1/15412_IMG_1883_2048x1365.jpg
+echo $(dimension imagesUR1/15412_IMG_1883_2048x1365.jpg)
