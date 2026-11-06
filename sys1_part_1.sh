@@ -4,10 +4,9 @@ function dimension() {
     if [ $# -ge 1 ]; then
         nom_fichier=$1;
         petite_dimension= identify $nom_fichier;
-        nom_intermediaire= ${petite_dimension//.jpg/_square.jpg}
-        echo "test"
-        echo $petite_dimension
-        echo $nom_intermediaire
+        nom_intermediaire=${nom_fichier//.jpg/_square.jpg}
+        # echo $petite_dimension
+        # echo $nom_intermediaire
         return $petite_dimension;
     else
         echo "erreur";
