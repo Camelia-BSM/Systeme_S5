@@ -1,15 +1,13 @@
 #!/bin/bash
 
 function dimension() {
-    if [ $# -ge 1 ]; then
-        nom_fichier=$1;
+    if [ $# -ge 1 ]; then #on verifi qu'au moins un parametre est present
+        nom_fichier=$1; #on utilise pas $1 directement, une variable intermédiaire est crée
         petite_dimension= identify $nom_fichier;
         nom_intermediaire=${nom_fichier//.jpg/_square.jpg}
-        # echo $petite_dimension
-        # echo $nom_intermediaire
         return $petite_dimension;
     else
-        echo "erreur";
+        echo "erreur"; #sans parametre, rien ne peut s'executer
     fi
 }
 
