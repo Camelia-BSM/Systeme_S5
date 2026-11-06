@@ -1,0 +1,13 @@
+{
+    "files.watcherExclude": {
+        "**/.bloop": true,
+        "**/.metals": true,
+        "**/.ammonite": true
+    },
+    "idris.idris2Mode": true,
+    "idris.idrisPath": "idris2",
+    "extensions.autoUpdate": false,
+    "update.mode": "none",
+    "extensions.ignoreRecommendations": true,
+    "workbench.remoteIndicator.showExtensionRecommendations": false
+}
