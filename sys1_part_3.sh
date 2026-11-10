@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source ./sys1_part_1.sh. #Importation du fichier réalisé partie 1
+source ./sys1_part_1.sh #Importation du fichier réalisé partie 1
 
 # echo $(dimension imagesUR1/15412_IMG_1883_2048x1365.jpg)
 
