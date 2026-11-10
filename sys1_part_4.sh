@@ -41,6 +41,7 @@ function generation() {
         img2pdf "$nom_intermediaire" -o "$nom_final" --pagesize 10cmx10cm #on en fait simplement un PDF
         mv "$nom_intermediaire" ./temporaire # On déplace les pdf dans le dossier temporaire
         mv "$nom_final" ./album_photo # on déplace le pdf modifié dans album_photo
+        pdfunite ./album_photo/*.pdf album_complet.pdf
         rm -r temporaire #Supression du dossier temporaire
 
     done
