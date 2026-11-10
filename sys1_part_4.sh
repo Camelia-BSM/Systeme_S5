@@ -42,9 +42,11 @@ function generation() {
         mv "$nom_intermediaire" ./temporaire # On déplace les pdf dans le dossier temporaire
         mv "$nom_final" ./album_photo # on déplace le pdf modifié dans album_photo
         pdfunite ./album_photo/*.pdf album_complet.pdf
-        rm -r temporaire #Supression du dossier temporaire
 
     done
+
+    rm -r temporaire #Supression du dossier temporaire
+    rm -r album_photo #Supression du dossier temporaire
 }
 
 generation "$@"
