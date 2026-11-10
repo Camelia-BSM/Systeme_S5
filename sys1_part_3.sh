@@ -12,4 +12,5 @@ function MyFonction() {
     done
 }
 
-MyFonction "imagesUR1/15412_IMG_1883_2048x1365.jpg" "imagesUR1/15396_Pelouse_1000x667.jpg" #Execution de la fonction
+# MyFonction "imagesUR1/15412_IMG_1883_2048x1365.jpg" "imagesUR1/15396_Pelouse_1000x667.jpg"
+ #Execution de la fonction
